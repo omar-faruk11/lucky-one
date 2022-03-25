@@ -1,18 +1,16 @@
-
+import './Products.css'
 
 const Products = ({product}) => {
     const {name,price,image} = product;
     return (
-        <div className="product-card">
-            <div className="card-img">
-                <img src={image} alt="" />
-            </div>
-            <div className="card-info">
+        <div className="product">
+            <img className="product-img" src={image} alt="" />
+            <div className="product-info">
                 <h3>Name:{name} </h3>
                 <p>Price:{price} </p>
-            </div>
-            <div className="card-btn">
-                <button> try it</button>
+                <button className="product-btn">
+                    <p>ADD TO CARD</p>
+                </button>
             </div>
         </div>
     );
