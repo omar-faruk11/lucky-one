@@ -28,6 +28,9 @@
     padding: 15px 20px;
     
 }
+.product-btn:hover{
+    background-color:rgb(219, 17, 108) ;
+}
 .product-btn p{
     
     margin-right: 20px;
@@ -35,4 +38,14 @@
 .react-icons{
     font-size: 200px;
     margin-left: 5px;
+}
+@media only screen and (max-width: 600px){
+    .product{
+        width: 340px;
+        margin: auto;
+        padding: auto;
+    }
+    .product-img{
+        width: 300px;
+    }
 }

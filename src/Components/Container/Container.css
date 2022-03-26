@@ -41,3 +41,19 @@
     margin-left: 20px;
 }
 
+@media only screen and (max-width: 600px){
+    .all-products{
+        grid-template-columns: 1fr;
+    }
+    .products-container{
+        grid-template-columns: 1fr;
+        margin: 0;
+        order: 2;
+    }
+    .card-container{
+        position: relative;
+        width: 340px;
+        margin: 20px auto;
+        padding: auto;
+    }
+}

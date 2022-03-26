@@ -10,6 +10,8 @@ const Container = () => {
     const [cards, setCards] =useState([]);
     const [randomProdct, setrandomProudt] = useState({});
     const [show, setShow] = useState(false);
+    
+    const {name, image, price} = randomProdct;
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -37,7 +39,6 @@ const Container = () => {
         .then(res => res.json())
         .then(data => setProducts(data));
     },[]);
-    console.log(randomProdct.name)
     return (
         <div>
             <h2>Choose the best</h2>
@@ -63,10 +64,10 @@ const Container = () => {
             <h2 className=' '>YaY. It may Best for you.</h2>
         </Modal.Header>
         <div className="display-modal">
-        <img className='w-50' src={randomProdct.image} alt="" />
+        <img className='w-50' src={image} alt="" />
         <div className='modal-info'>
-        <h3>{randomProdct.name}</h3>
-        <h4>{randomProdct.price}</h4>
+        <h3>{name}</h3>
+        <h4>{price}</h4>
         </div>
         </div>
         <Modal.Footer>
