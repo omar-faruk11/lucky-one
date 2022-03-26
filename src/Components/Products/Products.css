@@ -22,14 +22,15 @@
     background-color:  rgb(219 39 119);
     font-size: 18px;
     border:none;
-    padding: 0 10px;
     border-radius: 10px;
     margin-bottom: 20px;
     cursor: pointer;
+    padding: 15px 20px;
     
 }
 .product-btn p{
-    margin-right: 10px;
+    
+    margin-right: 20px;
 }
 .react-icons{
     font-size: 200px;

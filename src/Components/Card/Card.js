@@ -7,9 +7,9 @@ import './Card.css'
 const Card = ({card}) => {
     const {name,image} =card;
     return (
-        <div className='card'>
+        <div className='add-card'>
             <img src={image} alt="" />
-            <h4>{name.slice(0,25)}</h4>
+            <p>{name.slice(0,25)}</p>
             <div className="delete-btn">
             <FontAwesomeIcon icon={ faTrashAlt}></FontAwesomeIcon>
             </div>

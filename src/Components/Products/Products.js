@@ -11,7 +11,7 @@ const Products = ({product,addCardInfo}) => {
                 <h3>{name} </h3>
                 <p>Price: {price} </p>
                 <button onClick={() => addCardInfo(product)} className="product-btn">
-                    <p>ADD TO CARD</p>
+                    <span>ADD TO CARD</span>
                     <FontAwesomeIcon icon={faShoppingCart} />
                 </button>
             </div>
