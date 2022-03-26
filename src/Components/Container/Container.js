@@ -62,7 +62,7 @@ const Container = () => {
         </div>
         <Modal show={show} size="lg" onHide={handleClose}>
         <Modal.Header closeButton>
-            <h2 className=' '>Yay! It may Best for you.</h2>
+            <h2 className=' '>Yay! It may Best for you. You can buy it.</h2>
         </Modal.Header>
         <div className="display-modal">
         <img className='w-50' src={image} alt="" />
