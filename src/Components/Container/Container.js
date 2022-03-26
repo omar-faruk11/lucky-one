@@ -41,7 +41,8 @@ const Container = () => {
     },[]);
     return (
         <div>
-            <h2>Choose the best</h2>
+            <h2 className='hadding'>Choose the best</h2>
+            <p className='text-center'>You can choose from 4 items of your choice. We will give you a permanent solution.</p>
             <div className='all-products'>
             <div className="products-container">
                 {
@@ -61,7 +62,7 @@ const Container = () => {
         </div>
         <Modal show={show} size="lg" onHide={handleClose}>
         <Modal.Header closeButton>
-            <h2 className=' '>YaY. It may Best for you.</h2>
+            <h2 className=' '>Yay! It may Best for you.</h2>
         </Modal.Header>
         <div className="display-modal">
         <img className='w-50' src={image} alt="" />

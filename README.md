@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# CHOOSE THE BEST
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[CHOOSE THE BEST Project link](https://github.com/facebook/create-react-app)
 
 ## Available Scripts
 

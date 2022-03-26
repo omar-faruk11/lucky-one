@@ -1,0 +1,19 @@
+.qa-section{
+    margin-bottom: 50px;
+}
+.title{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.question{
+    color: rgb(219 39 119);
+}
+.ans{
+    text-align: justify;
+    
+}
+.ans:hover{
+    color: rgb(94, 55, 75);
+}
