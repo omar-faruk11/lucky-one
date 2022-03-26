@@ -1,23 +1,35 @@
 .product{
     height: 600px;
-    width: 400px;
+    width: 380px;
     border-radius: 8px;
     box-shadow: 3px 3px 20px 2px rgba(71, 71, 71, 0.2);
+    position: relative;
 }
 .product-img{
-    margin: 20px;
-    height: 360px;
+    margin: 20px ;
+    width: 340px;
 }
 .product-info{
     padding: 0 30px;
 }
 .product-btn{
+    position: absolute;
+    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(249 168 212);
+    color: white;
+    background-color:  rgb(219 39 119);
+    font-size: 18px;
     border:none;
-    border-radius: 20px;
+    padding: 0 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    
+}
+.product-btn p{
+    margin-right: 10px;
 }
 .react-icons{
     font-size: 200px;
