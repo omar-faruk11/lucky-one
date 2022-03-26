@@ -17,12 +17,21 @@ const Container = () => {
         }
         else{
             const newCard = [...cards,cardproduct];
-            setCards(newCard)
+            if(newCard.length < 5){
+                setCards(newCard)
+            }
+            
         }
     }
     const randomProdut = () =>{
         const chooses = cards[Math.floor(Math.random()*cards.length)];
-        setrandomProudt(chooses)
+        if(!chooses){
+
+        }
+        else{
+            setrandomProudt(chooses)
+        }
+        console.log(!chooses)
         
     }
     
@@ -31,6 +40,7 @@ const Container = () => {
         .then(res => res.json())
         .then(data => setProducts(data));
     },[]);
+    console.log(randomProdct)
     return (
         <div>
             <h2>Choose the best</h2>
@@ -48,6 +58,7 @@ const Container = () => {
                 <div className='card-button'>
                     <button onClick={randomProdut}>CHOOSE 1 FOR ME</button><br></br>
                     <button onClick={()=> setCards([])}>CHOOSE AGAIN</button>
+                    <p>{randomProdct.length}</p>
                 </div>
             </div>
         </div>
